@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Contraseña</title>
+</head>
+<body class="paginasola">
+
+    <div class="home">
+        <a href="./index.html">
+           <img src="./img/casa.svg" alt="casa" style="cursor: pointer;">
+        </a>
+    </div>
+        <div class="ventana">
+            <span class="name"><p>Selecciona entre 12 y 50 caracteres:</p>
+            <input class ="number" title="numbers" type="number" min="12" max="50"></input>
+            </span>
+
+            <div class="btn">
+                <button class="generar2"><b>GENERAR</b></button>
+            </div>
+
+
+            <div class="resultadoscontraseña"></div>
+            
+    </div>
+
+    <script type="module">
+        import {contrasena} from "./js/contrasena.js";
+        contrasena();
+    </script>
+    <script src="./js/backgrounds.js"></script>
+</body>
+</html>
+
